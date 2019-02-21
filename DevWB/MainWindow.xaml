@@ -7,6 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Work">
+                    <MenuItem Header="_New" />
+                    <MenuItem Header="_Open" />
+                    <MenuItem Header="_Save" />
+                    <Separator />
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+                <MenuItem Header="_Reports">
+                    <MenuItem Header="_Manage users">
+                        <MenuItem.Icon>
+                            <Image Source="/WpfTutorialSamples;component/Images/user.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
+                </MenuItem>
+                <MenuItem Header="_Settings">
+                    <MenuItem Header="_Manage users">
+                        <MenuItem.Icon>
+                            <Image Source="/WpfTutorialSamples;component/Images/user.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="_Show groups" IsCheckable="True" IsChecked="True" />
+                </MenuItem>
+            </Menu>
+            <TextBox AcceptsReturn="True" />
+        </DockPanel>
     </Grid>
 </Window>
